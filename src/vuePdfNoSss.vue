@@ -12,7 +12,7 @@
 
 			// var PdfjsWorker = require('worker-loader!pdfjs-dist/es5/build/pdf.worker.js');
 			// PDFJS.GlobalWorkerOptions.workerPort = new PdfjsWorker();
-			PDFJS.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.5.207/pdf.worker.min.js'
+			PDFJS.GlobalWorkerOptions.workerSrc = 'https://cdn.importgenius.com/pdf.js/2.5.207/pdf.worker.min.js'
 		}
 
 		var component = componentFactory(pdfjsWrapper(PDFJS));
