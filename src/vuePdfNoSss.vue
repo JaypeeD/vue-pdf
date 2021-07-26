@@ -11,7 +11,7 @@
 		if ( typeof window !== 'undefined' && 'Worker' in window && navigator.appVersion.indexOf('MSIE 10') === -1 ) {
 
 			var PdfjsWorker = require('worker-loader!pdfjs-dist/es5/build/pdf.worker.js');
-			PDFJS.GlobalWorkerOptions.workerSrc = "https://cdn.importgenius.com/pdf.js/2.5.207/pdf.worker.min.js";
+			PDFJS.GlobalWorkerOptions.workerSrc = "https://staging-console.importgenius.com/pdf.worker.min.js";
 		}
 
 		var component = componentFactory(pdfjsWrapper(PDFJS));
